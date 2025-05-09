@@ -63,8 +63,13 @@ ul a:hover {
 main {
     display: flex;
     flex-wrap: wrap;
+    /* Allow wrapping for responsiveness */
     gap: 20px;
-    max-width: 100%;
+    /* Add spacing between sections */
+    justify-content: center;
+    /* Center the sections horizontally */
+    align-items: flex-start;
+    /* Align sections at the top */
 }
 
 h1 {
@@ -95,7 +100,7 @@ p {
     font-family: var(--font);
 }
 
-.card h2 {
+.location h2 {
     order: 0;
     grid-row: 1;
     grid-column: 1;
@@ -106,32 +111,28 @@ p {
     margin: 0;
 }
 
-.card h3 {
-    order: 0;
-    grid-row: 3;
-    grid-column: 1 / span 3;
-    background-color: var(--heading-background-color);
-    color: var(--header_title-color);
-    text-align: center;
+
+
+.location {
+    flex: 1;
+    min-width: 300px;
+    background-color: var(--background);
     padding: 10px;
-    margin: 0;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
 }
 
-.card {
-    flex: 1;
-    min-width: 300px;
-    background-color: var(--background);
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    display: grid;
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-}
 .coursework {
-    flex: 1;
+    flex: 1 1 45%;
+    /* Allow sections to grow/shrink and take up 45% of the width */
     min-width: 300px;
+    /* Ensure a minimum width for smaller screens */
+    max-width: 600px;
+    /* Optional: Limit the maximum width */
     background-color: var(--background);
     padding: 10px;
     margin: 10px 0;
@@ -141,6 +142,7 @@ p {
     grid-template-columns: 1fr;
     grid-gap: 10px;
 }
+
 .coursework h2 {
     order: 0;
     grid-row: 1;
@@ -151,11 +153,46 @@ p {
     padding: 10px;
     margin: 0;
 }
+
+.certificate {
+    flex: 1 1 45%;
+    /* Allow sections to grow/shrink and take up 45% of the width */
+    min-width: 300px;
+    /* Ensure a minimum width for smaller screens */
+    max-width: 600px;
+    /* Optional: Limit the maximum width */
+    background-color: var(--background);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin: 20px auto;
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.certificate h2 {
+    order: 0;
+    grid-row: 1;
+    grid-column: 1;
+    background-color: var(--heading-background-color);
+    color: var(--header_title-color);
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+
 .info {
-    
+
     display: grid;
     grid-template-columns: 1fr 2fr;
-    
     text-align: left;
 }
 
@@ -190,6 +227,15 @@ li {
     border-radius: 5px;
     margin: 5px;
     font-weight: bold;
+}
+
+
+
+.course {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
 }
 
 footer {
