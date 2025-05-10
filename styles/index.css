@@ -63,13 +63,9 @@ ul a:hover {
 main {
     display: flex;
     flex-wrap: wrap;
-    /* Allow wrapping for responsiveness */
     gap: 20px;
-    /* Add spacing between sections */
     justify-content: center;
-    /* Center the sections horizontally */
     align-items: flex-start;
-    /* Align sections at the top */
 }
 
 h1 {
@@ -128,11 +124,8 @@ p {
 
 .coursework {
     flex: 1 1 45%;
-    /* Allow sections to grow/shrink and take up 45% of the width */
     min-width: 300px;
-    /* Ensure a minimum width for smaller screens */
     max-width: 600px;
-    /* Optional: Limit the maximum width */
     background-color: var(--background);
     padding: 10px;
     margin: 10px 0;
@@ -156,11 +149,8 @@ p {
 
 .certificate {
     flex: 1 1 45%;
-    /* Allow sections to grow/shrink and take up 45% of the width */
     min-width: 300px;
-    /* Ensure a minimum width for smaller screens */
     max-width: 600px;
-    /* Optional: Limit the maximum width */
     background-color: var(--background);
     padding: 10px;
     margin: 10px 0;
@@ -236,6 +226,21 @@ li {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
     margin-top: 20px;
+}
+
+.course-card {
+    border: 1px solid var(--text-color);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: var(--background);
+    text-align: center;
+}
+
+.course-card.completed {
+    background-color: #d4edda; 
+    border-color: #c3e6cb;
+    color: #155724;
 }
 
 footer {
