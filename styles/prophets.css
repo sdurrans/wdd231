@@ -1,16 +1,27 @@
 body {
     font-family: Roboto, sans-serif;
-    
+
 }
 
-h1 {
-    text-align: center;
-}
- 
 div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 1rem;
+}
+
+section {
+    background-color: #90a8c7;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #777;
+    padding: 1rem;
+    margin: 1rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
 }
 
 img {
@@ -19,5 +30,13 @@ img {
     box-shadow: 0 0 15px #777;
     height: 200px;
     border: 1px solid #111;
+
 }
 
+figcaption {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 1rem;
+}
