@@ -1,0 +1,23 @@
+body {
+    font-family: Roboto, sans-serif;
+    
+}
+
+h1 {
+    text-align: center;
+}
+ 
+div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+}
+
+img {
+    width: auto;
+    max-width: 325px;
+    box-shadow: 0 0 15px #777;
+    height: 200px;
+    border: 1px solid #111;
+}
+
