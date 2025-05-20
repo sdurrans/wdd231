@@ -1,0 +1,294 @@
+/* General Reset and Body */
+body {
+    font-family: 'Prompt', Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #eaeaea;
+    padding: 0.5rem 2rem;
+    border-bottom: 2px solid #ccc;
+}
+
+header img {
+    height: 60px;
+    width: auto;
+    margin-right: 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+header h2 {
+    font-size: 1.1rem;
+    font-weight: normal;
+    margin: 0 1rem 0 0;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+    background: #bfc9d1;
+    color: #000;
+}
+
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.Hero {
+    width: 95%;
+    margin: 2rem auto 1rem auto;
+    min-height: 250px;
+    background: #e0e0e0;
+    border: 2px solid #bbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.Hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+}
+
+/* Main Title */
+main>h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0 1rem 2.5%;
+}
+
+/* Events, Weather, Forecast Grid */
+.Windows {
+    width: 95%;
+    margin: 0 auto 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.Windows>div {
+    background: #e0e0e0;
+    border-radius: 5px;
+    min-height: 150px;
+    box-shadow: 0 0 8px #bbb;
+    display: flex;
+    flex-direction: column;
+}
+
+.Windows>div>h3 {
+    background: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+}
+
+.Windows .weather-content {
+    padding: 1rem;
+    font-size: 1rem;
+    color: #222;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Business Cards */
+.Business {
+    width: 95%;
+    margin: 0 auto 2rem auto;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.business-card {
+    background: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 0 8px #bbb;
+    padding: 1rem;
+    min-width: 250px;
+    max-width: 320px;
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.business-card img {
+    width: 80px;
+    height: 80px;
+    background: #ddd;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.business-card h4 {
+    margin: 0.5rem 0 0.2rem 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.business-card .tagline {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.business-card .contact {
+    font-size: 0.95rem;
+    color: #222;
+    margin-bottom: 0.2rem;
+}
+
+.business-card .contact strong {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #eaeaea;
+    padding: 2rem 2rem 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: 2px solid #ccc;
+    margin-top: 2rem;
+}
+
+.footer-info {
+    font-size: 1rem;
+    color: #222;
+    line-height: 1.5;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.footer-social a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: #ccc;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    font-size: 1.5rem;
+    color: #222;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.footer-social a:hover {
+    background: #bfc9d1;
+}
+
+.footer-meta {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 1rem;
+    width: 100%;
+    text-align: right;
+}
+
+/* Media Queries */
+@media (max-width: 700px) {
+    header, .footer-info, .footer-social, .footer-meta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Hero {
+        min-height: 120px;
+    }
+    .Windows {
+        grid-template-columns: 1fr;
+    }
+    .Business {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .business-card {
+        max-width: 100%;
+    }
+    main > h1 {
+        margin-left: 1rem;
+    }
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        background: #eaeaea;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        box-shadow: 0 2px 8px #bbb;
+    }
+    header nav ul.open {
+        display: flex;
+    }
+    #menu-toggle {
+        display: block;
+    }
+}
+
+.Business.list {
+  flex-direction: column;
+  align-items: stretch;
+}
+.Business.list .business-card {
+  max-width: 100%;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: left;
+}
+.Business.list .business-card img {
+  margin-right: 1rem;
+  margin-bottom: 0;
+  width: 80px;
+  height: 80px;
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Anchor Bar",
+    "address": "1047 Main St, Buffalo, NY 14209",
+    "phone": "716-883-1134",
+    "website": "https://anchorbar.com",
+    "image": "anchorbar.png",
+    "membership": 3,
+    "description": "Home of the Original Buffalo Wing"
+  },
+  {
+    "name": "Alice, Ever After Books",
+    "address": "295 Parkside Ave, Buffalo, NY 14214",
+    "phone": "800-555-1234",
+    "website": "https://aliceeverafterbooks.com",
+    "image": "alliceeverafter.webp",
+    "membership": 2,
+    "description": "A magical independent bookstore"
+  },
+  {
+    "name": "Cake Crazy Bakery",
+    "address": "2525 William St, Buffalo, NY 14206",
+    "phone": "716-235-8002",
+    "website": "https://cakecrazybakery.com",
+    "image": "cakecrazy.jpg",
+    "membership": 1,
+    "description": "Sell, Buy, Trade & Win"
+  },
+  {
+    "name": "Buffalo Coffee Roasters",
+    "address": "123 Elmwood Ave, Buffalo, NY 14201",
+    "phone": "716-555-9876",
+    "website": "https://buffalocoffee.com",
+    "image": "buffalocoffee.png",
+    "membership": 2,
+    "description": "Fresh roasted coffee daily"
+  },
+  {
+    "name": "Queen City Yoga",
+    "address": "44 North St, Buffalo, NY 14202",
+    "phone": "716-555-4321",
+    "website": "https://queencityyoga.com",
+    "image": "queencityyoga.png",
+    "membership": 1,
+    "description": "Yoga for everyone"
+  },
+  {
+    "name": "Nickel City Designs",
+    "address": "789 Main St, Buffalo, NY 14203",
+    "phone": "716-555-2468",
+    "website": "https://nickelcitydesigns.com",
+    "image": "nickelcitydesigns.png",
+    "membership": 3,
+    "description": "Custom apparel and gifts"
+  },
+  {
+    "name": "Buffalo Tech Solutions",
+    "address": "456 Tech Dr, Buffalo, NY 14204",
+    "phone": "716-555-1357",
+    "website": "https://buffalotech.com",
+    "image": "buffalotech.png",
+    "membership": 2,
+    "description": "IT solutions for your business"
+  }
+]
