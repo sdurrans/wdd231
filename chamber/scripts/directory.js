@@ -22,7 +22,7 @@ async function getMembers() {
 function displayMembers(members, view) {
   const container = document.querySelector('.Business');
   container.innerHTML = '';
-  container.className = 'Business' + view;
+  container.className = 'Business ${view}';
 
   members.forEach(member => {
     const card = document.createElement('div');
@@ -41,8 +41,11 @@ function displayMembers(members, view) {
 }
 
 // Toggle view
-document.getElementById('grid-btn').addEventListener('click', () => getMembersWithView('grid'));
-document.getElementById('list-btn').addEventListener('click', () => getMembersWithView('list'));
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('grid-btn').addEventListener('click', () => getMembersWithView('grid'));
+  document.getElementById('list-btn').addEventListener('click', () => getMembersWithView('list'));
+});
+
 
 async function getMembersWithView(view) {
   const response = await fetch('data/members.json');

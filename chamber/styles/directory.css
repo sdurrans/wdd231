@@ -238,26 +238,36 @@ footer {
 
 /* Media Queries */
 @media (max-width: 700px) {
-    header, .footer-info, .footer-social, .footer-meta {
+
+    header,
+    .footer-info,
+    .footer-social,
+    .footer-meta {
         flex-direction: column;
         align-items: flex-start;
     }
+
     .Hero {
         min-height: 120px;
     }
+
     .Windows {
         grid-template-columns: 1fr;
     }
+
     .Business {
         flex-direction: column;
         align-items: stretch;
     }
+
     .business-card {
         max-width: 100%;
     }
-    main > h1 {
+
+    main>h1 {
         margin-left: 1rem;
     }
+
     header nav ul {
         display: none;
         flex-direction: column;
@@ -268,27 +278,32 @@ footer {
         width: 200px;
         box-shadow: 0 2px 8px #bbb;
     }
+
     header nav ul.open {
         display: flex;
     }
+
     #menu-toggle {
         display: block;
     }
 }
 
 .Business.list {
-  flex-direction: column;
-  align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
+
 .Business.list .business-card {
-  max-width: 100%;
-  flex-direction: row;
-  align-items: flex-start;
-  text-align: left;
+    max-width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
 }
+
 .Business.list .business-card img {
-  margin-right: 1rem;
-  margin-bottom: 0;
-  width: 80px;
-  height: 80px;
+    margin-right: 1rem;
+    margin-bottom: 0;
+    width: 80px;
+    height: 80px;
 }
