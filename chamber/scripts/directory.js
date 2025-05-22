@@ -22,7 +22,7 @@ async function getMembers() {
 function displayMembers(members, view) {
   const container = document.querySelector('.Business');
   container.innerHTML = '';
-  container.className = 'Business ' + view;
+  container.className = 'Business' + view;
 
   members.forEach(member => {
     const card = document.createElement('div');
