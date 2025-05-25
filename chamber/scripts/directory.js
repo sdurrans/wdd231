@@ -9,7 +9,7 @@ document.getElementById('lastModified').textContent = `Last Modified: ${lastModi
 const menuToggle = document.getElementById('menu-toggle');
 const navList = document.querySelector('header nav ul');
 menuToggle.addEventListener('click', () => {
-    navList.classList.toggle('open');
+  navList.classList.toggle('open');
 });
 
 
@@ -34,7 +34,7 @@ function displayMembers(members, view) {
       <div class="contact"><strong>ADDRESS:</strong> ${member.address}</div>
       <div class="contact"><strong>PHONE:</strong> ${member.phone}</div>
       <div class="contact"><strong>URL:</strong> <a href="${member.website}" target="_blank">${member.website}</a></div>
-      <div class="contact"><strong>Membership:</strong> ${["Member", "Silver", "Gold"][member.membership-1]}</div>
+      <div class="contact"><strong>Membership:</strong> ${["Member", "Silver", "Gold"][member.membership - 1]}</div>
     `;
     container.appendChild(card);
   });
@@ -55,5 +55,58 @@ async function getMembersWithView(view) {
 
 // Initial load
 getMembers();
+
+
+const apiKey = "YOUR_API_KEY";
+const city = "Buffalo,US";
+const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=imperial`;
+
+fetch(url)
+  .then(response => response.json())
+  .then(data => {
+    // Current weather
+    document.getElementById('temperature').textContent = Math.round(data.list[0].main.temp);
+    document.getElementById('conditions').textContent = data.list[0].weather[0].description;
+    document.getElementById('wind').textContent = Math.round(data.list[0].wind.speed);
+
+    // 3-day forecast (simplified: next 3 days at noon)
+    const forecastEls = document.querySelectorAll('.forecast-temp');
+    let day = 1;
+    for (let i = 0; i < data.list.length; i++) {
+      if (data.list[i].dt_txt.includes("12:00:00") && day <= 3) {
+        forecastEls[day - 1].textContent = Math.round(data.list[i].main.temp) + "°F";
+        day++;
+      }
+    }
+  });
+
+
+async function loadSpotlights() {
+  const response = await fetch('data/members.json');
+  const members = await response.json();
+  // Filter for gold or silver
+  const goldSilver = members.filter(m => m.membership === 2 || m.membership === 3);
+  // Shuffle and pick 2 or 3
+  goldSilver.sort(() => 0.5 - Math.random());
+  const spotlights = goldSilver.slice(0, 3);
+
+  const container = document.querySelector('.Spotlights');
+  container.innerHTML = '';
+  spotlights.forEach(member => {
+    const card = document.createElement('div');
+    card.className = 'business-card';
+    card.innerHTML = `
+      <img src="images/${member.image}" alt="${member.name}">
+      <h4>${member.name}</h4>
+      <div class="tagline">${member.description}</div>
+      <div class="contact"><strong>ADDRESS:</strong> ${member.address}</div>
+      <div class="contact"><strong>PHONE:</strong> ${member.phone}</div>
+      <div class="contact"><strong>URL:</strong> <a href="${member.website}" target="_blank">${member.website}</a></div>
+      <div class="contact"><strong>Membership:</strong> ${["Member", "Silver", "Gold"][member.membership - 1]}</div>
+    `;
+    container.appendChild(card);
+  });
+}
+document.addEventListener('DOMContentLoaded', loadSpotlights);
 
 

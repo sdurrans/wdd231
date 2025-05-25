@@ -66,7 +66,6 @@ header nav ul li a:hover {
     cursor: pointer;
 }
 
-/* Hero Section */
 .Hero {
     width: 95%;
     margin: 2rem auto 1rem auto;
@@ -306,4 +305,66 @@ footer {
     margin-bottom: 0;
     width: 80px;
     height: 80px;
+}
+
+
+#cta {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background: #bbb;
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+}
+
+@media (max-width: 700px) {
+    #cta {
+        left: 50%;
+        top: 90%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+    }
+}
+
+.Spotlights-Box {
+    margin: 2rem auto;
+    max-width: 900px;
+    background: #f8fafd;
+    border: 2px solid #005fa3;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px #bfc9d1;
+    padding: 1.5rem 1rem 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spotlights-banner {
+    background: #bbb;
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.Spotlights {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
