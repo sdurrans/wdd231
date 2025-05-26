@@ -22,7 +22,7 @@ async function getMembers() {
 function displayMembers(members, view) {
   const container = document.querySelector('.Business');
   container.innerHTML = '';
-  container.className = 'Business ${view}';
+  container.className = `Business ${view}`;
 
   members.forEach(member => {
     const card = document.createElement('div');
@@ -57,7 +57,7 @@ async function getMembersWithView(view) {
 getMembers();
 
 
-const apiKey = "YOUR_API_KEY";
+const apiKey = "cee6a049a29a2d3e889cce6c47a5c1d6";
 const city = "Buffalo,US";
 const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=imperial`;
 

@@ -24,7 +24,7 @@
 
 <body>
     <header>
-        <div class="header-left" style="display:flex;align-items:center;">
+        <div class="header-left" >
             <img src="images/flag.webp" alt="Buffalo Flag" width="60" height="60" style="margin-right:1rem;">
             <div>
                 <h1>Buffalo</h1>
@@ -55,6 +55,20 @@
             <div class="Windows">
                 <div>
                     <h3>Events</h3>
+                    <ul class="events-list">
+                        <li>
+                            <strong>June 15:</strong> Summer Business Mixer at City Park, 6:00 PM
+                        </li>
+                        <li>
+                            <strong>June 22:</strong> Ribbon Cutting - New Downtown Cafe, 10:00 AM
+                        </li>
+                        <li>
+                            <strong>July 4:</strong> Independence Day Parade, Main Street, 9:00 AM
+                        </li>
+                        <li>
+                            <strong>July 18:</strong> Networking Breakfast at Chamber Hall, 8:30 AM
+                        </li>
+                    </ul>
                     <div class="window-content"></div>
                 </div>
                 <div>
@@ -65,10 +79,10 @@
                             <img src="images/partlycloudy.png" alt="Partly cloudy weather icon" width="100"
                                 height="100">
                         </picture>
-                        <p><b>Temperature: <span id="temperature"></span> 72°F</b></p>
-                        <p><b>Conditions: <span id="conditions"></span>Partly Cloudy</b></p>
-                        <p><b>Wind: <span id="wind"></span>7 MPH</b></p>
-                        <p><b>Wind Chill: <span id="wind-chill"></span> 70°F</b></p>
+                        <p><b>Temperature: <span id="temperature"></span> °F</b></p>
+                        <p><b>Conditions: <span id="conditions"></span></b></p>
+                        <p><b>Wind: <span id="wind"></span> MPH</b></p>
+                        <p><b>Wind Chill: <span id="wind-chill"></span> °F</b></p>
                     </div>
                 </div>
                 <div>
@@ -110,7 +124,7 @@
         <div class="footer-meta">
             WDD231 Class Project<br>
             Stuart Durrant &copy; <span id="currentYear"></span> Buffalo Chamber of Commerce<br>
-            Last Modification: <span id="lastModified"></span>
+            <span id="lastModified"></span>
         </div>
     </footer>
 </body>
