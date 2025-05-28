@@ -68,27 +68,26 @@ main {
     align-items: flex-start;
 }
 
+h1,
+h2,
+h3 {
+    font-family: var(--font);
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+}
+
 h1 {
     font-size: 30px;
-    font-weight: bold;
-    font-family: var(--font);
 }
 
 h2 {
     font-size: 25px;
-    font-weight: bold;
-    font-family: var(--font);
-    padding: 10px;
-    margin: 0;
     height: 50px;
 }
 
 h3 {
     font-size: 20px;
-    font-weight: bold;
-    font-family: var(--font);
-    padding: 10px;
-    margin: 0;
 }
 
 p {
@@ -149,8 +148,7 @@ p {
 
 .certificate {
     flex: 1 1 45%;
-    min-width: 300px;
-    max-width: 600px;
+    min-width: 300px;    
     background-color: var(--background);
     padding: 10px;
     margin: 10px 0;
@@ -203,8 +201,8 @@ p {
     height: auto;
 }
 
+
 ul {
-    font-family: var(--font);
     list-style-type: none;
     padding: 10px;
     text-align: center;
@@ -212,7 +210,6 @@ ul {
 
 li {
     font-size: 20px;
-    font-family: var(--font);
     padding: 5px;
     border-radius: 5px;
     margin: 5px;
@@ -238,19 +235,12 @@ li {
 }
 
 .course-card.completed {
-    background-color: #d4edda; 
+    background-color: #d4edda;
     border-color: #c3e6cb;
     color: #155724;
 }
 
-footer {
-    grid-area: footer;
-    background-color: var(--heading-background-color);
-    color: var(--header_title-color);
-    text-align: center;
-    padding: 15px;
-    border-top: 1px solid var(--background);
-}
+
 
 #lastModified {
     color: var(--header_title-color);
@@ -258,4 +248,56 @@ footer {
 
 footer #currentyear {
     font-weight: bold;
+}
+
+dialog {
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+    z-index: 1000;
+    text-align: left;    
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+}
+
+
+#lastModified {
+    color: var(--header_title-color);
+    
+}
+footer {
+    grid-area: footer;
+    background-color: var(--heading-background-color);
+    color: var(--header_title-color);
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid var(--background);
 }
