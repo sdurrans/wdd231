@@ -108,10 +108,10 @@ async function loadSpotlights() {
   });
 }
 
-// Set timestamp on page load
+
 document.getElementById('timestamp').value = new Date().toISOString();
 
-// Modal open logic
+
 document.querySelectorAll('.modal-link').forEach(link => {
   link.addEventListener('click', function (e) {
     e.preventDefault();
@@ -120,7 +120,7 @@ document.querySelectorAll('.modal-link').forEach(link => {
   });
 });
 
-// Animate membership cards on load
+
 window.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.membership-card').forEach((card, i) => {
     card.style.opacity = 0;
