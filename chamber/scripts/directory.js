@@ -107,6 +107,31 @@ async function loadSpotlights() {
     container.appendChild(card);
   });
 }
+
+// Set timestamp on page load
+document.getElementById('timestamp').value = new Date().toISOString();
+
+// Modal open logic
+document.querySelectorAll('.modal-link').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const modalId = this.getAttribute('data-modal');
+    document.getElementById(modalId).showModal();
+  });
+});
+
+// Animate membership cards on load
+window.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.membership-card').forEach((card, i) => {
+    card.style.opacity = 0;
+    card.style.transform = "translateY(40px)";
+    setTimeout(() => {
+      card.style.transition = "all 0.7s cubic-bezier(.4,2,.6,1)";
+      card.style.opacity = 1;
+      card.style.transform = "translateY(0)";
+    }, 200 + i * 200);
+  });
+});
 document.addEventListener('DOMContentLoaded', loadSpotlights);
 
 

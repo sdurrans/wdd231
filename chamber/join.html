@@ -43,7 +43,113 @@
     </header>
 
     <main>
-      
+        <h1>Join the Chamber</h1>
+        <form method="get" action="thankyou.html" class="join-form" id="joinForm">
+            <label>
+                First Name*
+                <input type="text" name="first" required title="Your First Name" autocomplete="given-name">
+            </label>
+            <label>
+                Last Name*
+                <input type="text" name="last" required title="Your Last Name" autocomplete="family-name">
+            </label>
+            <label>
+                Organizational Title
+                <input type="text" name="orgtitle" title="Your Organizational Title" autocomplete="organization-title"
+                    pattern="[A-Za-z\- ]{7,}" placeholder="At least 7 letters, hyphens, or spaces">
+            </label>
+            <label>
+                Email*
+                <input type="email" name="email" required title="Your Email" autocomplete="email" placeholder="you@email.com">
+            </label>
+            <label>
+                Mobile Phone*
+                <input type="tel" name="phone" required title="Your Mobile Phone" autocomplete="tel">
+            </label>
+            <label>
+                Business/Organization Name*
+                <input type="text" name="organization" required title="Business/Organization Name" autocomplete="organization">
+            </label>
+            <label>
+                Membership Level*
+                <select name="membership" required title="Select Membership Level">
+                    <option value="">Select a level</option>
+                    <option value="np">NP Membership (Non-Profit, Free)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+            <label>
+                Business/Organization Description
+                <textarea name="description" title="Describe your business or organization"></textarea>
+            </label>
+            <input type="hidden" name="timestamp" id="timestamp">
+            <input type="submit" value="Join the Chamber">
+        </form>
+        
+        <!-- Membership Cards -->
+        <section class="membership-cards">
+            <div class="membership-card np" tabindex="0">
+                <h2>NP Membership</h2>
+                <p>No fee. For non-profit organizations.</p>
+                <a href="#np-modal" class="modal-link" data-modal="np-modal">More Info</a>
+            </div>
+            <div class="membership-card bronze" tabindex="0">
+                <h2>Bronze Membership</h2>
+                <p>Entry-level benefits for small businesses.</p>
+                <a href="#bronze-modal" class="modal-link" data-modal="bronze-modal">More Info</a>
+            </div>
+            <div class="membership-card silver" tabindex="0">
+                <h2>Silver Membership</h2>
+                <p>Includes event discounts and advertising.</p>
+                <a href="#silver-modal" class="modal-link" data-modal="silver-modal">More Info</a>
+            </div>
+            <div class="membership-card gold" tabindex="0">
+                <h2>Gold Membership</h2>
+                <p>All benefits, premium exposure, and training.</p>
+                <a href="#gold-modal" class="modal-link" data-modal="gold-modal">More Info</a>
+            </div>
+        </section>
+        
+        <!-- Modals for Membership Info -->
+        <dialog id="np-modal">
+            <h2>NP Membership Benefits</h2>
+            <ul>
+                <li>Free for non-profit organizations</li>
+                <li>Access to networking events</li>
+                <li>Basic directory listing</li>
+            </ul>
+            <button onclick="document.getElementById('np-modal').close()">Close</button>
+        </dialog>
+        <dialog id="bronze-modal">
+            <h2>Bronze Membership Benefits</h2>
+            <ul>
+                <li>All NP benefits</li>
+                <li>Business workshops</li>
+                <li>Newsletter feature</li>
+            </ul>
+            <button onclick="document.getElementById('bronze-modal').close()">Close</button>
+        </dialog>
+        <dialog id="silver-modal">
+            <h2>Silver Membership Benefits</h2>
+            <ul>
+                <li>All Bronze benefits</li>
+                <li>Event discounts</li>
+                <li>Spotlight advertising</li>
+            </ul>
+            <button onclick="document.getElementById('silver-modal').close()">Close</button>
+        </dialog>
+        <dialog id="gold-modal">
+            <h2>Gold Membership Benefits</h2>
+            <ul>
+                <li>All Silver benefits</li>
+                <li>Premium directory placement</li>
+                <li>Free training sessions</li>
+            </ul>
+            <button onclick="document.getElementById('gold-modal').close()">Close</button>
+        </dialog>
+        
     </main>
 
     <footer>
