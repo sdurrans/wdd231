@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Buffalo Zoo",
+        "location": "300 Parkside Ave, Buffalo, NY",
+        "cost": "Adults $14, Children (3-12) $10, under 3 free",
+        "description": "One of the oldest zoos in the US, home to over 1,200 animals on 23.5 acres. Great for families and wildlife lovers.",
+        "photo_url": "Buffalo_Zoo.webp"
+    },
+    {
+        "name": "Buffalo AKG Art Museum",
+        "location": "1285 Elmwood Ave, Buffalo, NY",
+        "cost": "Adults $15-20, discounts for youth and seniors",
+        "description": "World-class modern & contemporary art museum, reopened after a major renovation in 2023, with engaging exhibitions and a café.",
+        "photo_url": "buffalo-akg-art-museum.webp"
+    },
+    {
+        "name": "Buffalo and Erie County Naval & Military Park",
+        "location": "1 Naval Park Dr, Buffalo, NY (Canalside)",
+        "cost": "Adults $15, Children $9",
+        "description": "Largest inland naval park in the U.S. Visit decommissioned ships and a submarine right on the waterfront.",
+        "photo_url": "buffalo-naval-park.webp"
+    },
+    {
+        "name": "Buffalo & Erie County Botanical Gardens",
+        "location": "2655 South Park Ave, Buffalo, NY",
+        "cost": "Adults $16.50, Seniors/Students $15, Children 3-12 $9, under 3 free",
+        "description": "Victorian-style glass conservatory featuring tropical plants, themed gardens, and seasonal events.",
+        "photo_url": "buffalo-botanical-gardens.webp"
+    },
+    {
+        "name": "Martin House Complex",
+        "location": "125 Jewett Pkwy, Buffalo, NY",
+        "cost": "Adults $30, Members $25, under 12 free",
+        "description": "Stunning Frank Lloyd Wright-designed home and gardens—tour the architecture and learn about its history.",
+        "photo_url": "martin-house-complex.webp"
+    },
+    {
+        "name": "Canalside",
+        "location": "44 Prime St, Buffalo, NY",
+        "cost": "Free (some activities like kayak rental $10-$20)",
+        "description": "Vibrant waterfront district with walking paths, concerts, kayak rentals, festivals, and food vendors.",
+        "photo_url": "Canalside_Buffalo.webp"
+    },
+    {
+        "name": "Buffalo City Hall Observation Deck",
+        "location": "65 Niagara Square, Buffalo, NY",
+        "cost": "Free",
+        "description": "Head to the 32-story Art Deco observation deck for panoramic views of Buffalo, Lake Erie, and even Niagara Falls on clear days.",
+        "photo_url": "buffalo-city-hall-observation-deck.webp"
+    },
+    {
+        "name": "Burchfield Penney Art Center",
+        "location": "1285 Elmwood Ave, Buffalo, NY",
+        "cost": "Adults $10, Seniors/Students $8, under 18 free",
+        "description": "Home to the world's largest collection of artist Charles Burchfield, with changing exhibits and outdoor art installations.",
+        "photo_url": "burchfield-penney-art-center.webp"
+    },
+    {
+        "name": "Buffalo Harbor State Park",
+        "location": "1111 Fuhrmann Blvd, Buffalo, NY",
+        "cost": "Vehicle entry fee ~$10 or NYS parks pass",
+        "description": "A 190-acre state park & marina on Lake Erie featuring beach access, trails, fishing, and scenic views.",
+        "photo_url": "buffalo-harbor-state-park.webp"
+    },
+    {
+        "name": "Parkside Candy & Ice Cream Shop",
+        "location": "Parkside neighborhood, Buffalo, NY",
+        "cost": "Most treats $3-$7",
+        "description": "Historic candy parlor founded in 1919, famous for handmade sponge candy and classic ice cream in a nostalgic setting.",
+        "photo_url": "parkside-candy-ice-cream.webp"
+    }
+]
