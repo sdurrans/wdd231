@@ -1,0 +1,11 @@
+@media (min-width: 701px) and (max-width: 1024px) {
+    .Windows {
+        grid-template-columns: 1fr 1fr;
+    }
+    .membership-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+}
