@@ -1,0 +1,88 @@
+/* Root color variables to match index.css */
+:root {
+    --background-color: #f8fafd;
+    --primary: #222;
+    --accent: #005fa3;
+    --text: #222;
+    --border: #ccc;
+    --footer-bg: #222;
+    --footer-text: #fff;
+    --footer-link: #aad;
+}
+
+/* General styles */
+body {
+    font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+    background: var(--background-color);
+    color: var(--text);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background: #fff;
+    border-bottom: 2px solid var(--border);
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0;
+}
+
+/* Main */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+main p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: var(--primary);
+}
+
+#request-count {
+    font-weight: bold;
+    color: var(--accent);
+}
+
+/* Footer */
+footer {
+    background: var(--footer-bg);
+    color: var(--footer-text);
+    text-align: center;
+    padding: 1.5rem 1rem 1rem 1rem;
+    font-size: 1rem;
+    margin-top: auto;
+}
+
+footer a {
+    color: var(--footer-link);
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.3rem;
+    }
+
+    main p {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.95rem;
+    }
+}
