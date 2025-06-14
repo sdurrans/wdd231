@@ -1,0 +1,58 @@
+{
+    "droneImages": [
+        {
+            "title": "Modern Suburban Home",
+            "image": "realestate1.jpg",
+            "address": "123 Placeholder St, Sample City, ST 12345",
+            "category": "Real Estate"
+        },
+        {
+            "title": "Cozy Countryside Cottage",
+            "image": "realestate2.jpg",
+            "address": "456 Placeholder Rd, Example Town, ST 67890",
+            "category": "Real Estate"
+        },
+        {
+            "title": "Luxury Waterfront Villa",
+            "image": "realestate3.jpg",
+            "address": "789 Placeholder Ave, Demo City, ST 54321",
+            "category": "Real Estate"
+        },
+        {
+            "title": "Commercial Site Progress - Phase 1",
+            "image": "construction1.jpg",
+            "address": "321 Buildsite Blvd, Projectville, ST 11111",
+            "category": "Construction Tracking"
+        },
+        {
+            "title": "Residential Development Progress",
+            "image": "construction2.jpg",
+            "address": "654 Dev Loop, Construct City, ST 22222",
+            "category": "Construction Tracking"
+        },
+        {
+            "title": "Downtown Tower Build Update",
+            "image": "construction3.jpg",
+            "address": "987 Highrise St, Urbania, ST 33333",
+            "category": "Construction Tracking"
+        },
+        {
+            "title": "Agricultural Mapping Field A",
+            "image": "mapping1.jpg",
+            "address": "159 Map Ln, Farmland, ST 44444",
+            "category": "Mapping"
+        },
+        {
+            "title": "Land Survey - Future Park Site",
+            "image": "mapping2.jpg",
+            "address": "753 Survey Rd, Greenspace, ST 55555",
+            "category": "Mapping"
+        },
+        {
+            "title": "Topographic Scan - Mountain Region",
+            "image": "mapping3.jpg",
+            "address": "852 Elevation Dr, Hillside, ST 66666",
+            "category": "Mapping"
+        }
+    ]
+}

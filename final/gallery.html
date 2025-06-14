@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD231 - Web Frontend Development - Stuart Durrant</title>
+    <meta name="description" content="WDD231 - Web Frontend Development - Stuart Durrant - Final Project">
+    <meta name="author" content="Stuart Durrant">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/final.js" defer></script>
+    <script src="scripts/gallery.js" defer></script>
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="WDD231 - Web Frontend Development - Stuart Durrant">
+    <meta property="og:description" content="WDD231 - Final Project">
+    <meta property="og:image" content="images/stuart.jpg">
+    <meta property="og:url" content="https://sdurrans.github.io/wdd231/index.html">
+</head>
+<body>
+    <header>
+        <h1>Drone Image Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="filter">
+            <label for="categorySelect">Filter by Category:</label>
+            <select id="categorySelect">
+                <option value="All">All</option>
+                <option value="Real Estate">Real Estate</option>
+                <option value="Construction Tracking">Construction Tracking</option>
+                <option value="Mapping">Mapping</option>
+            </select>
+        </section>
+
+        <section id="gallery-grid" class="gallery-grid">
+            <!-- Cards are injected by gallery.js -->
+        </section>
+
+        <div id="imageModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img id="modalImage" src="" alt="">
+                <h2 id="modalTitle"></h2>
+                <p id="modalAddress"></p>
+                <p id="modalCategory"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>©<span id="currentYear"></span> Stuart Durrant - Areial Estates</p>
+        <p id="lastModified"></p>
+        <p><a href="attributions.html">Attributions</a></p>
+    </footer>
+
+    <script type="module" src="scripts/gallery.js"></script>
+    <script src="scripts/footer.js" defer></script>
+    </body>
+
+</html>
