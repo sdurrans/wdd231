@@ -2,19 +2,19 @@
     "droneImages": [
         {
             "title": "Modern Suburban Home",
-            "image": "realestate1.jpg",
+            "image": "realestate1.webp",
             "address": "123 Placeholder St, Sample City, ST 12345",
             "category": "Real Estate"
         },
         {
             "title": "Cozy Countryside Cottage",
-            "image": "realestate2.jpg",
+            "image": "realestate2.webp",
             "address": "456 Placeholder Rd, Example Town, ST 67890",
             "category": "Real Estate"
         },
         {
             "title": "Luxury Waterfront Villa",
-            "image": "realestate3.jpg",
+            "image": "realestate3.webp",
             "address": "789 Placeholder Ave, Demo City, ST 54321",
             "category": "Real Estate"
         },

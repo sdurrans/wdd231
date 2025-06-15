@@ -1,8 +1,7 @@
-// gallery.js
 
 import { setupModal } from './modal.js';
 
-const galleryContainer = document.querySelector('#portfolio-list');
+const galleryContainer = document.querySelector('#gallery-grid');
 const dataUrl = 'data/drones.json';
 
 const showModal = setupModal();
@@ -21,7 +20,7 @@ async function loadDroneImages() {
 
 function displayGallery(images) {
     images.forEach(image => {
-        const card = document.createElement('section');
+        const card = document.createElement('div'); // Use div for consistency
         card.classList.add('card');
 
         card.innerHTML = `
@@ -43,5 +42,15 @@ function displayGallery(images) {
         galleryContainer.appendChild(card);
     });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById('imageModal');
+    const closeBtn = document.querySelector('.modal .close');
+    if (closeBtn) {
+        closeBtn.addEventListener('click', function () {
+            modal.style.display = 'none';
+        });
+    }
+});
 
 loadDroneImages();

@@ -13,8 +13,9 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/responsive.css">
     <script src="scripts/final.js" defer></script>
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicon.ico">
     <meta property="og:title" content="WDD231 - Web Frontend Development - Stuart Durrant">
     <meta property="og:description" content="WDD231 - Final Project">
     <meta property="og:image" content="images/stuart.jpg">
@@ -26,7 +27,7 @@
         <div class="header">
             <img src="images/aerialestates.webp" alt="Aerial Estates Logo">
             <nav id="nav">
-                <button id="menu-toggle" aria-label="Toggle menu">☰</button>>
+                <button id="menu-toggle" aria-label="Toggle menu">☰</button>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="gallery.html">Services</a></li>
@@ -86,8 +87,22 @@
     </main>
 
     <footer>
-        <p>©<span id="currentYear">2025</span> - Stuart Durrant - South Wales, New York</p>
-        <p id="lastModified"></p>
+        <div class="footer-info">
+            <strong>Aerial Estates</strong><br>
+            123 Main St, East Aurora, NY<br>
+            Myaerialestates@gmail.com<br>
+            (123) 456-7891
+        </div>
+        <div class="footer-social">
+            <a href="#"><span aria-label="YouTube">&#x25B6;</span></a>
+            <a href="#"><span aria-label="Twitter">&#x1F426;</span></a>
+            <a href="#"><span aria-label="LinkedIn">&#x1F465;</span></a>
+        </div>
+        <div class="footer-meta">
+            WDD231 Class Project<br>
+            Stuart Durrant &copy; <span id="currentYear"></span> Buffalo Chamber of Commerce<br>
+            <span id="lastModified"></span>
+        </div>
     </footer>
 </body>
 
