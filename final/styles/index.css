@@ -87,7 +87,7 @@ nav {
 .hero-text {
     position: absolute;
     top: 25%;
-    left: 25%;
+    left: 30%;
     transform: translate(-50%, -50%);
     background-color: var(--background-color);
     padding: 40px;
